@@ -923,7 +923,7 @@ function library:CreateWindow(name, size, hidebutton)
                     }
 
                     local text = keybind.default == "None" and "[None]" or "[" .. (shorter_keycodes[keybind.default.Name] or keybind.default.Name) .. "]"
-                    local size = textservice:GetTextSize(text, 15, window.theme.font, Vector2.new(2000, 2000))
+                    local size = textservice:GetTextSize(text, 13, window.theme.font, Vector2.new(2000, 2000))
 
                     keybind.Main = Instance.new("TextButton", toggle.Items)
                     keybind.Main.Name = "keybind"
@@ -1206,7 +1206,7 @@ function library:CreateWindow(name, size, hidebutton)
                         Item.Name = v
                         Item.AutoButtonColor = false
                         Item.Font = window.theme.font
-                        Item.TextSize = 15
+                        Item.TextSize = 13
                         Item.TextXAlignment = Enum.TextXAlignment.Left
                         Item.TextStrokeTransparency = 1
                         dropdown.ItemsFrame.CanvasSize = dropdown.ItemsFrame.CanvasSize + UDim2.fromOffset(0, Item.AbsoluteSize.Y)
@@ -1364,7 +1364,7 @@ function library:CreateWindow(name, size, hidebutton)
                     textbox.Main.ZIndex = 5
                     textbox.Main.TextScaled = true
                     textbox.Main.Size = textbox.Holder.Size
-                    textbox.Main.TextSize = 15
+                    textbox.Main.TextSize = 13
                     textbox.Main.TextColor3 = Color3.fromRGB(255, 255, 255)
                     textbox.Main.BorderSizePixel = 0
                     textbox.Main.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
@@ -1740,7 +1740,7 @@ function library:CreateWindow(name, size, hidebutton)
                     slider.InputLabel.TextColor3 = Color3.fromRGB(240, 240, 240)
                     slider.InputLabel.Position = slider.Main.Position
                     slider.InputLabel.Selectable = false
-                    slider.InputLabel.TextSize = 15
+                    slider.InputLabel.TextSize = 13
                     slider.InputLabel.ZIndex = 9
                     slider.InputLabel.TextStrokeTransparency = 1
                     slider.InputLabel.TextXAlignment = Enum.TextXAlignment.Center
@@ -1916,7 +1916,7 @@ function library:CreateWindow(name, size, hidebutton)
                 textbox.Label.ZIndex = 5
                 textbox.Label.Text = textbox.text
                 textbox.Label.TextColor3 = window.theme.itemscolor
-                textbox.Label.TextSize = 15
+                textbox.Label.TextSize = 13
                 textbox.Label.TextStrokeTransparency = 1
                 textbox.Label.TextXAlignment = Enum.TextXAlignment.Left
                 updateevent.Event:Connect(function(theme)
@@ -1946,7 +1946,7 @@ function library:CreateWindow(name, size, hidebutton)
                 textbox.Main.ZIndex = 5
                 textbox.Main.TextScaled = true
                 textbox.Main.Size = textbox.Holder.Size
-                textbox.Main.TextSize = 15
+                textbox.Main.TextSize = 13
                 textbox.Main.TextColor3 = Color3.fromRGB(255, 255, 255)
                 textbox.Main.BorderSizePixel = 0
                 textbox.Main.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
@@ -2052,7 +2052,7 @@ function library:CreateWindow(name, size, hidebutton)
                 slider.Label.Text = slider.text .. ":"
                 slider.Label.TextColor3 = window.theme.itemscolor
                 slider.Label.Position = UDim2.fromOffset(0, 0)
-                slider.Label.TextSize = 15
+                slider.Label.TextSize = 13
                 slider.Label.ZIndex = 4
                 slider.Label.TextStrokeTransparency = 1
                 slider.Label.TextXAlignment = Enum.TextXAlignment.Left
@@ -2070,7 +2070,7 @@ function library:CreateWindow(name, size, hidebutton)
                 slider.InputLabel.Text = "0"
                 slider.InputLabel.TextColor3 = window.theme.itemscolor
                 slider.InputLabel.Position = UDim2.fromOffset(size.X + 3, -3)
-                slider.InputLabel.TextSize = 15
+                slider.InputLabel.TextSize = 13
                 slider.InputLabel.ZIndex = 4
                 slider.InputLabel.TextStrokeTransparency = 1
                 slider.InputLabel.TextXAlignment = Enum.TextXAlignment.Left
@@ -2241,7 +2241,7 @@ function library:CreateWindow(name, size, hidebutton)
                 colorpicker.Label.Font = window.theme.font
                 colorpicker.Label.Text = colorpicker.text
                 colorpicker.Label.TextColor3 = window.theme.itemscolor
-                colorpicker.Label.TextSize = 15
+                colorpicker.Label.TextSize = 13
                 colorpicker.Label.TextStrokeTransparency = 1
                 colorpicker.Label.TextXAlignment = Enum.TextXAlignment.Left
                 updateevent.Event:Connect(function(theme)
@@ -2453,7 +2453,7 @@ function library:CreateWindow(name, size, hidebutton)
                     dropdown.Main.Font = window.theme.font
                     dropdown.Main.Text = ""
                     dropdown.Main.TextColor3 = Color3.fromRGB(255, 255, 255)
-                    dropdown.Main.TextSize = 15
+                    dropdown.Main.TextSize = 13
                     dropdown.Main.TextXAlignment = Enum.TextXAlignment.Left
                     updateevent.Event:Connect(function(theme)
                         dropdown.Main.Font = theme.font
@@ -2472,7 +2472,7 @@ function library:CreateWindow(name, size, hidebutton)
                     dropdown.SelectedLabel.Text = colorpicker.text
                     dropdown.SelectedLabel.ZIndex = 5
                     dropdown.SelectedLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-                    dropdown.SelectedLabel.TextSize = 15
+                    dropdown.SelectedLabel.TextSize = 13
                     dropdown.SelectedLabel.TextStrokeTransparency = 1
                     dropdown.SelectedLabel.TextXAlignment = Enum.TextXAlignment.Left
                     updateevent.Event:Connect(function(theme)
@@ -2645,7 +2645,7 @@ function library:CreateWindow(name, size, hidebutton)
                         Item.Name = v
                         Item.AutoButtonColor = false
                         Item.Font = window.theme.font
-                        Item.TextSize = 15
+                        Item.TextSize = 13
                         Item.TextXAlignment = Enum.TextXAlignment.Left
                         Item.TextStrokeTransparency = 1
                         dropdown.ItemsFrame.CanvasSize = dropdown.ItemsFrame.CanvasSize + UDim2.fromOffset(0, Item.AbsoluteSize.Y)
@@ -2858,7 +2858,7 @@ function library:CreateWindow(name, size, hidebutton)
                 keybind.Main.Font = window.theme.font
                 keybind.Main.Text = keybind.text
                 keybind.Main.TextColor3 = window.theme.itemscolor
-                keybind.Main.TextSize = 15
+                keybind.Main.TextSize = 13
                 keybind.Main.TextStrokeTransparency = 1
                 keybind.Main.TextXAlignment = Enum.TextXAlignment.Left
                 updateevent.Event:Connect(function(theme)
@@ -2875,7 +2875,7 @@ function library:CreateWindow(name, size, hidebutton)
                 keybind.Bind.Position = UDim2.fromOffset(sector.Main.Size.X.Offset - 10, 0)
                 keybind.Bind.Font = window.theme.font
                 keybind.Bind.TextColor3 = Color3.fromRGB(136, 136, 136)
-                keybind.Bind.TextSize = 15
+                keybind.Bind.TextSize = 13
                 keybind.Bind.TextXAlignment = Enum.TextXAlignment.Right
                 keybind.Bind.MouseButton1Down:Connect(function()
                     keybind.Bind.Text = "[...]"
@@ -2979,7 +2979,7 @@ function library:CreateWindow(name, size, hidebutton)
                 dropdown.Label.Text = dropdown.text
                 dropdown.Label.ZIndex = 4
                 dropdown.Label.TextColor3 = window.theme.itemscolor
-                dropdown.Label.TextSize = 15
+                dropdown.Label.TextSize = 13
                 dropdown.Label.TextStrokeTransparency = 1
                 dropdown.Label.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -2999,7 +2999,7 @@ function library:CreateWindow(name, size, hidebutton)
                 dropdown.Main.Font = window.theme.font
                 dropdown.Main.Text = ""
                 dropdown.Main.TextColor3 = Color3.fromRGB(255, 255, 255)
-                dropdown.Main.TextSize = 15
+                dropdown.Main.TextSize = 13
                 dropdown.Main.TextXAlignment = Enum.TextXAlignment.Left
                 updateevent.Event:Connect(function(theme)
                     dropdown.Main.Font = theme.font
@@ -3018,7 +3018,7 @@ function library:CreateWindow(name, size, hidebutton)
                 dropdown.SelectedLabel.Text = dropdown.text
                 dropdown.SelectedLabel.ZIndex = 5
                 dropdown.SelectedLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-                dropdown.SelectedLabel.TextSize = 15
+                dropdown.SelectedLabel.TextSize = 13
                 dropdown.SelectedLabel.TextStrokeTransparency = 1
                 dropdown.SelectedLabel.TextXAlignment = Enum.TextXAlignment.Left
                 updateevent.Event:Connect(function(theme)
@@ -3195,7 +3195,7 @@ function library:CreateWindow(name, size, hidebutton)
                     Item.Name = v
                     Item.AutoButtonColor = false
                     Item.Font = window.theme.font
-                    Item.TextSize = 15
+                    Item.TextSize = 13
                     Item.TextXAlignment = Enum.TextXAlignment.Left
                     Item.TextStrokeTransparency = 1
                     dropdown.ItemsFrame.CanvasSize = dropdown.ItemsFrame.CanvasSize + UDim2.fromOffset(0, Item.AbsoluteSize.Y)
