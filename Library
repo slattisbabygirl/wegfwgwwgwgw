@@ -19,16 +19,18 @@ local mouse = player:GetMouse()
 local camera = game.Workspace.CurrentCamera
 
 library.theme = {
-    fontsize = 12,
-    titlesize = 15,
+    fontsize = 15,
+    titlesize = 18,
     font = Enum.Font.Code,
     background = "rbxassetid://5553946656",
-    tilesize = 70,
+    tilesize = 90,
+    cursor = true,
+    cursorimg = "https://t0.rbxcdn.com/42f66da98c40252ee151326a82aab51f",
     backgroundcolor = Color3.fromRGB(20, 20, 20),
-    tabstextcolor = Color3.fromRGB(255, 182, 193),
+    tabstextcolor = Color3.fromRGB(240, 240, 240),
     bordercolor = Color3.fromRGB(60, 60, 60),
-    accentcolor = Color3.fromRGB(255, 182, 193),
-    accentcolor2 = Color3.fromRGB(255, 182, 193),
+    accentcolor = Color3.fromRGB(28, 56, 139),
+    accentcolor2 = Color3.fromRGB(16, 31, 78),
     outlinecolor = Color3.fromRGB(60, 60, 60),
     outlinecolor2 = Color3.fromRGB(0, 0, 0),
     sectorcolor = Color3.fromRGB(30, 30, 30),
@@ -3646,11 +3648,6 @@ function library:CreateWindow(name, size, hidebutton)
         table.insert(window.Tabs, tab)
         return tab
     end
-
-    return window
-end
-
-return library
 
     return window
 end
