@@ -228,7 +228,7 @@ function library:CreateWindow(name, size, hidebutton)
 
     window.Main = Instance.new("ScreenGui", coregui)
     window.Main.Name = name
-    window.Main.DisplayOrder = 15
+    window.Main.DisplayOrder = 12
     if syn then
         syn.protect_gui(window.Main)
     end
@@ -613,7 +613,7 @@ function library:CreateWindow(name, size, hidebutton)
             sector.Label.TextColor3 = Color3.new(1,1,2552/255)
             sector.Label.TextStrokeTransparency = 1
             sector.Label.Font = window.theme.font
-            sector.Label.TextSize = 15
+            sector.Label.TextSize = 13
             updateevent.Event:Connect(function(theme)
                 local size = textservice:GetTextSize(sector.name, 15, theme.font, Vector2.new(2000, 2000))
                 sector.Label.Size = UDim2.fromOffset(math.clamp(textservice:GetTextSize(sector.name, 15, theme.font, Vector2.new(200,300)).X + 13, 0, sector.Main.Size.X.Offset), size.Y)
@@ -725,7 +725,7 @@ function library:CreateWindow(name, size, hidebutton)
                 button.Label.Font = window.theme.font
                 button.Label.Text = button.text
                 button.Label.TextColor3 = window.theme.itemscolor2
-                button.Label.TextSize = 15
+                button.Label.TextSize = 11
                 button.Label.TextStrokeTransparency = 1
                 button.Label.TextXAlignment = Enum.TextXAlignment.Center
                 button.Main.MouseButton1Down:Connect(button.callback)
@@ -758,7 +758,7 @@ function library:CreateWindow(name, size, hidebutton)
                 label.Main.Font = window.theme.font
                 label.Main.Text = text
                 label.Main.TextColor3 = window.theme.itemscolor
-                label.Main.TextSize = 15
+                label.Main.TextSize = 13
                 label.Main.TextStrokeTransparency = 1
                 label.Main.TextXAlignment = Enum.TextXAlignment.Left
                 updateevent.Event:Connect(function(theme)
@@ -794,7 +794,7 @@ function library:CreateWindow(name, size, hidebutton)
                 toggle.Main.Font = Enum.Font.SourceSans
                 toggle.Main.Text = ""
                 toggle.Main.TextColor3 = Color3.fromRGB(0, 0, 0)
-                toggle.Main.TextSize = 15
+                toggle.Main.TextSize = 13
                 updateevent.Event:Connect(function(theme)
                     toggle.Main.BorderColor3 = theme.outlinecolor
                 end)
@@ -847,7 +847,7 @@ function library:CreateWindow(name, size, hidebutton)
                 toggle.Label.ZIndex = 5
                 toggle.Label.Text = toggle.text
                 toggle.Label.TextColor3 = window.theme.itemscolor
-                toggle.Label.TextSize = 15
+                toggle.Label.TextSize = 13
                 toggle.Label.TextStrokeTransparency = 1
                 toggle.Label.TextXAlignment = Enum.TextXAlignment.Left
                 updateevent.Event:Connect(function(theme)
@@ -934,7 +934,7 @@ function library:CreateWindow(name, size, hidebutton)
                     keybind.Main.Text = text
                     keybind.Main.Font = window.theme.font
                     keybind.Main.TextColor3 = Color3.fromRGB(136, 136, 136)
-                    keybind.Main.TextSize = 15
+                    keybind.Main.TextSize = 13
                     keybind.Main.TextXAlignment = Enum.TextXAlignment.Right
                     keybind.Main.MouseButton1Down:Connect(function()
                         keybind.Main.Text = "[...]"
@@ -1013,7 +1013,7 @@ function library:CreateWindow(name, size, hidebutton)
                     dropdown.Main.Font = window.theme.font
                     dropdown.Main.Text = ""
                     dropdown.Main.TextColor3 = Color3.fromRGB(255, 255, 255)
-                    dropdown.Main.TextSize = 15
+                    dropdown.Main.TextSize = 13
                     dropdown.Main.TextXAlignment = Enum.TextXAlignment.Left
                     updateevent.Event:Connect(function(theme)
                         dropdown.Main.Font = theme.font
@@ -1032,7 +1032,7 @@ function library:CreateWindow(name, size, hidebutton)
                     dropdown.SelectedLabel.Text = toggle.text
                     dropdown.SelectedLabel.ZIndex = 5
                     dropdown.SelectedLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-                    dropdown.SelectedLabel.TextSize = 15
+                    dropdown.SelectedLabel.TextSize = 13
                     dropdown.SelectedLabel.TextStrokeTransparency = 1
                     dropdown.SelectedLabel.TextXAlignment = Enum.TextXAlignment.Left
                     updateevent.Event:Connect(function(theme)
